@@ -1,27 +1,3 @@
-/*
-
-This is a custom SCSS stylesheet for the Twitter application. First we include the Sencha Touch SCSS, commenting out
-the parts we don't need (e.g. tabs, pickers, carousel etc). After that we simply define our application's CSS using
-normal CSS or SCSS syntax.
-
-To compile this stylesheet, we just open up a terminal window, cd to twitter/resources/scss (the location of this file)
-and run this command:
-
-    compass compile
-
-This builds an optimized application.css file, placing it in the twitter/resources/css directory.
-
-Note - to run the compass command you must have the Ruby language installed (if you're on OS X you already have it,
-if you're on windows it's easy to install - see http://rubyforge.org/frs/?group_id=167). Once you have ruby, open
-up a terminal window and type in:
-
-    gem install haml compass compass-colors
-
-After this you can run 'compass compile' as above to compile the stylesheet.
-
-*/
-
-
 $include-default-icons: false;
 $include-default-uis: false;
 $base-color: #3E7AAD;
@@ -150,9 +126,9 @@ body {
         min-height: 100px;
         margin-left: 15px;
         overflow: hidden;
-        @include border-radius(6px);
-        background: #eee;
-        @include box-flex(1);
+        
+        background: #fff;
+       
     }
 
     .x-tweetanchor {
@@ -254,7 +230,6 @@ body {
     font-size: 1.2em;
 }
 
-/* Manually disable background as we're not doing anything on tap */
 
 .x-list .x-list-item.x-item-pressed {
   background: none transparent;
